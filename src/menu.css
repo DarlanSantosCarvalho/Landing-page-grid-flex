@@ -15,6 +15,8 @@
   transition: 0.3s;
 }
 
+/* Responsive */
+
 .header .menu {
   display: none;
   width: 60px;
@@ -25,22 +27,21 @@
 .header nav label{
     display: flex;
     flex-direction: column;
-
 }
 
 .header .hamburger {
   background-color: #000;
   position: relative;
   display: block;
-  width: 40px;
+  width: 30px;
   height: 2px;
   top: 29px;
   left: 15px;
   transition: 0.5s ease-in-out;
 }
 
-.header .hamburger:before,
-.header .hamburger:after{
+.header .hamburger::before,
+.header .hamburger::after{
     background-color: #000;
     content: "";
     display: block;
@@ -50,11 +51,11 @@
     transition: 0.2s ease-in-out;
 }
 
-.header .hamburger:before{
+.header .hamburger::before{
     top: -10px;
 }
 
-.header .hamburger:after{
+.header .hamburger::after{
     bottom: -10px;
 }
 
@@ -62,7 +63,7 @@
     display: none;
 }
 
-.header input:checked ~ label .hamburger {
+.header input:checked ~ label .hamburger{
     transform: rotate(45deg);
 }
 
@@ -76,8 +77,6 @@
     bottom: 0;
 }
 
-
-
 /* Responsividade */
 
 @media(max-width: 900px){
@@ -89,27 +88,26 @@
         display: none;
     }
 
-    .header input:checked ~ nav ul{
-        display: flex;
-        flex-direction: column;
+    .header input:checked ~ ul{
+        display: block;
     }
- 
+
     .header nav{
-        display: flex;
-        flex-direction: column;
         position: absolute;
-        right: 0px;
-        top: 80px;
+        top: 8px;
+        right: 20px;
+        z-index: 1;
     }
 
     .header nav ul{
+        width: 200px;
         background-color: #fff;
-        padding: 10px;
+        padding: 20px;
     }
 
     .header nav ul a{
         text-align: center;
-        padding: 0px 20px;
+        padding: 20px;
         display: block;
-    } 
+    }
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="src/menu.css">
     <link rel="stylesheet" href="src/variable.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/font-awesome.css">
+    <link href="src/fontawesome/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,15 +21,17 @@
                 <h1 class="logo">Agência XYZ</h1>
             </a>
 
-            <input type="checkbox" id="menu-hamburger">
-
-            <label for="menu-hamburger">
-                <div class="menu">
-                    <span class="hamburger"></span>
-                </div>
-            </label>
-
             <nav>
+                <input type="checkbox" id="menu-hamburger">
+
+                <label for="menu-hamburger">
+
+                    <div class="menu">
+                        <span class="hamburger"></span>
+                    </div>
+
+                </label>
+
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
@@ -44,18 +46,122 @@
         <h2>We make cool things</h2>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
+
+        <div class="item">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corrupti ipsa odit nihil possimus earum
+                eos eum. Natus, quas, non doloremque unde, commodi necessitatibus neque doloribus ab nisi fuga quaerat.
+            </p>
+            <a class="btn-know-more" href="">Saiba mais</a>
+        </div>
+
+        <div class="imagem direita">
+            <img src="" alt="">
+        </div>
+
+        <div class="imagem esquerda">
+        </div>
+
+        <div class="item">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corrupti ipsa odit nihil possimus earum
+                eos eum. Natus, quas, non doloremque unde, commodi necessitatibus neque doloribus ab nisi fuga quaerat.
+            </p>
+            <a class="btn-know-more" href="">Saiba mais</a>
+        </div>
+
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
+        <div class="seo">
+            <img src="src/images/bolinha1.png" alt="Bolinha vermelha">
+            <h3>
+                SEO
+            </h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, aliquid consequuntur beatae voluptate
+                quibusdam tenetur iure quaerat eligendi unde. Numquam culpa itaque cupiditate sed repudiandae tempore
+                doloremque ad quo sequi?
+            </p>
+        </div>
 
+        <div class="ld-page">
+            <img src="src/images/bolinha2.png" alt="Bolinha azul">
+            <h3>
+                Landing pages
+            </h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, aliquid consequuntur beatae voluptate
+                quibusdam tenetur iure quaerat eligendi unde. Numquam culpa itaque cupiditate sed repudiandae tempore
+                doloremque ad quo sequi?
+            </p>
+        </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
+
+        <div class="projeto">
+
+            <a href="">
+                <img src="src/images/tomatoes.jpg" alt="Tomates">
+            </a>
+
+        </div>
+
+        <div class="projeto">
+
+            <a href="">
+                <img src="src/images/landscape.jpg" alt="Horizonte">
+            </a>
+
+        </div>
+
+        <div class="projeto">
+
+            <a href="">
+                <img src="src/images/plants.jpg" alt="Plantas">
+            </a>
+
+        </div>
+
+        <div class="projeto">
+
+            <a href="">
+                <img src="src/images/flowers.jpg" alt="Flores rosas">
+            </a>
+
+        </div>
 
     </section>
 
     <footer class="footer">
+        <h4>Agência XYZ</h4>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="social">
+            <a href="">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
+        </div>
 
     </footer>
 
